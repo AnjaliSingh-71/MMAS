@@ -18,7 +18,7 @@ import 'package:money_assistant_2608/project/localization/methods.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'dart:io' show Platform;
 
-import '../classes/input_model.dart';
+import '../classes/input_model.dart' show InputModel;
 import 'edit.dart';
 
 class Calendar extends StatelessWidget {
@@ -101,7 +101,7 @@ class _CalendarBodyState extends State<CalendarBody> {
               },
               child: SwipeActionCell(
                 key: ObjectKey(transactions[int]),
-                performsFirstActionWithFullSwipe: true,
+                
                 trailingActions: <SwipeAction>[
                   SwipeAction(
                       title: getTranslated(context, 'Delete') ?? 'Delete',
